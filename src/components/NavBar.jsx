@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding="1.5rem" w="100%" bg="black" color="white">
+    <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding="1.5rem" w="100%" bg="navyAlpha.700" color="white">
       <Flex align="center" mr={5}>
         <Text fontSize="lg" fontWeight="bold">JSAX Trade</Text>
       </Flex>
