@@ -1,60 +1,60 @@
-import React from 'react';
-import { SimpleGrid, Box, Icon, Text, useBreakpointValue } from '@chakra-ui/react';
-// Import icons from Chakra UI Icons or any other icon library
-import { MdSettings, MdStar, MdVisibility } from 'react-icons/md';
-
-const features = [
-  {
-    icon: MdSettings,
-    title: 'Feature 1',
-    description: 'Description of Feature 1',
-  },
-  {
-    icon: MdSettings,
-    title: 'Feature 1',
-    description: 'Description of Feature 1',
-  },
-  {
-    icon: MdSettings,
-    title: 'Feature 1',
-    description: 'Description of Feature 1',
-  },
-  {
-    icon: MdSettings,
-    title: 'Feature 1',
-    description: 'Description of Feature 1',
-  },
-  {
-    icon: MdSettings,
-    title: 'Feature 1',
-    description: 'Description of Feature 1',
-  },
-  {
-    icon: MdSettings,
-    title: 'Feature 1',
-    description: 'Description of Feature 1',
-  },
-  // ... add other 5 features here
-];
-
-const FeatureCard = ({ icon, title, description }) => (
-  <Box p={5} shadow="md" borderWidth="1px" borderRadius="md">
-    <Icon as={icon} w={10} h={10} />
-    <Text mt={4} fontSize="xl" fontWeight="semibold">{title}</Text>
-    <Text mt={2}>{description}</Text>
-  </Box>
-);
+import React from 'react'
 
 const FeatureCards = () => {
-  const columns = useBreakpointValue({ base: 1, md: 2, lg: 3 });
-
   return (
-    <SimpleGrid columns={columns} spacing={10}>
-      {features.map((feature, index) => (
-        <FeatureCard key={index} {...feature} />
-      ))}
-    </SimpleGrid>
-  );
-};
+    <div className="container text-center">
+      <p className="section-subtitle text-dark">Why use JSAX Trade</p>
+      <h2 className="section-title mb-6">Features</h2>
+      <div className='row'>
+        <div className="col-md-6 col-lg-3">
+          <div className="feature-card">
+            <div className="body">
+              <img src="icons/journal.svg" alt="journal" className="icon" />
+              <h6 className="title">Daily Markups</h6>
+              <p className="subtitle">
+                Track daily pre and post market analyses along key historical trading statistics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-3">
+          <div className="feature-card">
+            <div className="body">
+              <img src="icons/journal.svg" alt="journal" className="icon" />
+              <h6 className="title">Daily Markups</h6>
+              <p className="subtitle">
+                Track daily pre and post market analyses along key historical trading statistics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-3">
+          <div className="feature-card">
+            <div className="body">
+              <img src="icons/journal.svg" alt="journal" className="icon" />
+              <h6 className="title">Daily Markups</h6>
+              <p className="subtitle">
+                Track daily pre and post market analyses along key historical trading statistics.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-md-6 col-lg-3">
+          <div className="feature-card">
+            <div className="body">
+              <img src="icons/journal.svg" alt="journal" className="icon" />
+              <h6 className="title">Daily Markups</h6>
+              <p className="subtitle">
+                Track daily pre and post market analyses along key historical trading statistics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-export default FeatureCards;
+
+  )
+}
+
+export default FeatureCards

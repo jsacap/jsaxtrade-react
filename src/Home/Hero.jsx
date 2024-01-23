@@ -25,6 +25,7 @@ const Hero = ({ title, description, backgroundImage }) => {
         left: 0,
         bg: "blackAlpha.600", 
         zIndex: "1",
+        bgGradient:"linear(to-b, transparent, gray.900)"
       }}
     >
       <Box position="relative" zIndex="2"> {/* Ensure text is above the overlay */}

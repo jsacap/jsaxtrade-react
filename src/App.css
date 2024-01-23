@@ -1,0 +1,153 @@
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  font-family: 'Baloo Paaji', cursive;
+  color: #695aa6;
+}
+
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Section */
+.section {
+    padding: 70px 10px;
+    background: #fff;
+  }
+  
+  .section .section-title {
+    font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1300 - 300)));
+    color: #00001C;
+  }
+  
+  .section .section-subtitle {
+    margin-bottom: 6px;
+    font-weight: 400;
+    opacity: .6;
+  }
+  
+  .section-sm {
+    padding: 40px 0 !important;
+  }
+  
+  .section-md {
+    padding: 60px 0 !important;
+  }
+  
+  .section-lg {
+    padding: 100px 0 !important;
+  }
+  
+
+
+/* Feature Cards */
+.feature-card {
+  position: relative;
+  min-height: 230px;
+  border: 1px solid #dee2e6;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+
+.feature-card p{
+  color: #212529;
+}
+  
+.feature-card .body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.feature-card .body img.icon {
+  margin-top: 40px;
+  width: 55px;
+  margin-bottom: 25px;
+  transition: all 0.3s;
+}
+
+.feature-card .title {
+  color: #00001C;
+  text-align: center;
+  margin-top: 10px;
+}
+
+  
+@media (prefers-reduced-motion: reduce) {
+  .feature-card .body img.icon {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+  
+.feature-card .body .subtitle {
+  position: absolute;
+  bottom: -100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all, 0.3s;
+  transition: all, 0.3s;
+}
+  
+@media (prefers-reduced-motion: reduce) {
+  .feature-card .body .subtitle {
+    -webkit-transition: none;
+    transition: none;
+  }
+}
+  
+.feature-card:hover .body img.icon {
+  margin-top: 5px;
+  width: 45px;
+  margin-bottom: 15px;
+}
+  
+.feature-card:hover .body .subtitle {
+  bottom: 7px;
+  opacity: 1;
+  visibility: visible;
+}
+  
