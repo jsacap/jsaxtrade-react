@@ -8,7 +8,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding="1.5rem" w="100%" bg="navyAlpha.700" color="white">
+    <Flex as="nav" align="center" justify="space-between" wrap="wrap" padding="1rem" w="100%" bg="black" color="white">
       <Flex align="center" mr={5}>
         <Text fontSize="lg" fontWeight="bold">JSAX Trade</Text>
       </Flex>
@@ -33,21 +33,20 @@ const Navbar = () => {
     zIndex="20"
   >
     <Stack>
-      <Link>Blog</Link>
-      <Link>Trader</Link>
-      <Link>Investor</Link>
+      <a href="https://sanchojralegre.com/marketblog" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://jsax-production.up.railway.app/trading/dashboard/" target="_blank" rel="noopener noreferenceer">Trader</a>
+      <a href="https://jsax-production.up.railway.app/investor/" target="_blank" rel="noopener noreferrer">Investor</a>
     </Stack>
   </Box>
 </Collapse>
 
 
-      <Box display={{ base: "none", md: "block" }}>
-        <Flex align="center">
-          <Link px={2}>Blog</Link>
-          <Link px={2}>Trader</Link>
-          <Link px={2}>Investor</Link>
-        </Flex>
-      </Box>
+<Flex align="center">
+  <Box mr={4}><a href="https://sanchojralegre.com/marketblog" target="_blank" rel="noopener noreferrer">Blog</a></Box>
+  <Box mr={4}><a href="https://jsax-production.up.railway.app/trading/dashboard/" target="_blank" rel="noopener noreferrer">Trader</a></Box>
+  <a href="https://jsax-production.up.railway.app/investor/" target="_blank" rel="noopener noreferrer">Investor</a>
+</Flex>
+
 
       <Box>
         <Button variant="outline" _hover={{ bg: "gray.700", borderColor: "gray.700" }}>Login</Button>
