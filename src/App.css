@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 50px;
 }
 
 @media (min-width: 576px) {
@@ -154,15 +155,34 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Early Access */
 .early-access {
+  background-image: url('path-to-your-image.jpg');
   background-size: cover;
   background-position: center;
-  padding: 50px 0;  
+  min-height: 500px;
+  width: 100%;
+  padding: 50px 25px;
+  position: absolute;
+  overflow: hidden;
 }
 
-.early-access form {
-  background: white;
+.early-access::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.form-box {
+  margin-top: 550px;
+  position: relative;
+  z-index: 2;
+  background: rgba(252, 250, 250, 0.8);
+  color: black;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
 }
