@@ -1,6 +1,7 @@
 import { Box } from '@chakra-ui/react'
 import Hero from './Hero'
 import Features from './Features'
+import EarlyAccess from './EarlyAccess';
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
         backgroundImage={heroImage}
         />
         <Features />
+        <EarlyAccess />
             
 
 

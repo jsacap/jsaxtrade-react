@@ -151,3 +151,18 @@ h1, h2, h3, h4, h5, h6 {
   visibility: visible;
 }
   
+
+/* Early Access */
+.early-access {
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;  
+}
+
+.early-access form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
