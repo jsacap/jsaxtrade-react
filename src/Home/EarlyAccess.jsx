@@ -1,4 +1,5 @@
 import React from 'react'
+import ContactForm from './ContactForm'
 
 const EarlyAccess = () => {
     const bgImage = '/heroImage.jpg'
@@ -11,15 +12,7 @@ const EarlyAccess = () => {
                 <h2>Sign Up</h2>
                 <p>Sign up for early access and receive the latest updates.</p>
                 
-                <form>
-                <div className="mb-3">
-                    <input type="text" className="form-control" placeholder="Name" />
-                </div>
-                <div className="mb-3">
-                    <input type="email" className="form-control" placeholder="Email" />
-                </div>
-                <button type="submit" className="btn btn-primary">Submit</button>
-                </form>
+                <ContactForm />
             </div>
             <div className="col-md-6">
                 {/* Right Column - Heading and Description */}
@@ -31,7 +24,7 @@ const EarlyAccess = () => {
                 As part of our select group, you'll have the opportunity to explore all platform features and shape 
                 its future with your insights and feedback. 
                 <br />
-Your contribution will refine and enhance the user 
+                Your contribution will refine and enhance the user 
                 experience for traders worldwide. By joining us early, you not only get to test cutting-edge tools
                  but also accumulate valuable data before others. Make a meaningful impact on a platform that's 
                  revolutionizing the trading world.
