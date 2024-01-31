@@ -19,10 +19,11 @@ const ContactForm = () => {
       const response = await axios.post('https://jsax-production.up.railway.app/contact/', formData, {
         withCredentials: true,
         headers: {
-          'X-CSRFToken': csrfToken,
           'Content-Type': 'application/json',
+          'X-CSRFToken': csrfToken,
         },
       });
+      
 
       toast({
         title: 'SUCCESS!',

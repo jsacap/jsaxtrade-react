@@ -49,7 +49,9 @@ const Navbar = () => {
 
 
       <Box>
+      <a href="https://jsax-production.up.railway.app/trading/dashboard/" target="_blank" rel="noopener noreferenceer">
         <Button variant="outline" _hover={{ bg: "gray.700", borderColor: "gray.700" }}>Login</Button>
+        </a>
       </Box>
     </Flex>
   );
